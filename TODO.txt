@@ -1,0 +1,4 @@
+TODO:
+  - memory address on the right hand side...
+    mov a, [b]
+  - fix operand tests

@@ -1,0 +1,3 @@
+foo:
+  call foo
+  ret
