@@ -46,6 +46,16 @@ static bool get_line_range(const char* str, int line, int* line_start, int* line
   return false;
 }
 
+// TODO: use ansi escape codes for colors!
+// https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences
+//
+//   HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
+//   DWORD flags = 0;
+//   GetConsoleMode(h, &flags);
+//   flags |= 0x4; // ENABLE_VIRTUAL_TERMINAL_PROCESSING flag
+//   SetConsoleMode(h, flags);
+//
+
 #ifdef INC_WINDOWS
   #define ERROR_COLOR FOREGROUND_RED | FOREGROUND_INTENSITY
   #define POSITION_COLOR FOREGROUND_GREEN | FOREGROUND_INTENSITY
