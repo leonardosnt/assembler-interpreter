@@ -160,10 +160,6 @@ void gen_insns(gen_state* gen, instruction* instructions, int num_instructions) 
   }
 }
 
-// TODO: gen used registers...
-// ra, rb, rc, rd
-// forward decl them
-
 const char* start = "\
 #include <stdio.h>            \n\
 #include <stdint.h>           \n\
